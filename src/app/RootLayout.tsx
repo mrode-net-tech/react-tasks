@@ -1,6 +1,16 @@
 import { Suspense } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, NavLink } from 'react-router-dom';
 import { Spinner } from '../components/Spinner';
+
+interface TaskLink {
+  to: string;
+  label: string;
+}
+
+// Add new tasks here — they will appear automatically in the navbar.
+const TASK_LINKS: readonly TaskLink[] = [
+  { to: '/tasks/counter', label: 'Counter' },
+];
 
 export default function RootLayout() {
   return (
@@ -19,6 +29,27 @@ export default function RootLayout() {
           >
             React Tasks
           </Link>
+          <nav aria-label="Tasks">
+            <ul className="flex items-center gap-1 sm:gap-2">
+              {TASK_LINKS.map((link) => (
+                <li key={link.to}>
+                  <NavLink
+                    to={link.to}
+                    className={({ isActive }) =>
+                      [
+                        'rounded-md px-3 py-1.5 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950',
+                        isActive
+                          ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
+                          : 'text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
+                      ].join(' ')
+                    }
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </header>
       <main
