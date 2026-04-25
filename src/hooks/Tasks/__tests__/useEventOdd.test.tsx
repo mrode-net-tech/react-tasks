@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { act, renderHook } from '@testing-library/react';
 import { useEvenOdd } from '../useEvenOdd';
-import { INITIAL_NUMBER, NumberType } from '@/config/tasksConfig';
+import { INITIAL_NUMBER, type NumberType } from '@/config/tasksConfig';
 
 describe('useEvenOdd', () => {
   it('starts at INITIAL_NUMBER', () => {
