@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { INITIAL_COUNTER } from '../../config/tasksConfig';
+import { INITIAL_COUNTER } from '@/config/tasksConfig';
 
 export interface CounterControlResult {
   count: number;

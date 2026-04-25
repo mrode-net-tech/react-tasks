@@ -10,6 +10,7 @@ interface TaskLink {
 // Add new tasks here — they will appear automatically in the navbar.
 const TASK_LINKS: readonly TaskLink[] = [
   { to: '/tasks/counter', label: 'Counter' },
+  { to: '/tasks/even-odd', label: 'Even Odd' },
 ];
 
 export default function RootLayout() {
