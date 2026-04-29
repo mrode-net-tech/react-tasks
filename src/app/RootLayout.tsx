@@ -11,6 +11,7 @@ interface TaskLink {
 const TASK_LINKS: readonly TaskLink[] = [
   { to: '/tasks/counter', label: 'Counter' },
   { to: '/tasks/even-odd', label: 'Even Odd' },
+  { to: 'tasks/move-box', label: 'Move Box' },
 ];
 
 export default function RootLayout() {
