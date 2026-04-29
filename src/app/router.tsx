@@ -5,6 +5,7 @@ import CounterPage from '../pages/Tasks/CounterPage.tsx';
 import EvenOddPage from '../pages/Tasks/EvenOddPage.tsx';
 import MoveBoxPage from '@/pages/Tasks/MoveBoxPage.tsx';
 import CursorFollowerPage from '@/pages/Tasks/CursorFollowerPage.tsx';
+import TypewriterPage from '@/pages/Tasks/TypewriterPage.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { path: 'tasks/even-odd', Component: EvenOddPage },
       { path: 'tasks/move-box', Component: MoveBoxPage },
       { path: 'tasks/cursor', Component: CursorFollowerPage },
+      { path: 'tasks/typewriter', Component: TypewriterPage },
     ],
   },
 ]);
