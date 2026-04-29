@@ -12,6 +12,7 @@ const TASK_LINKS: readonly TaskLink[] = [
   { to: '/tasks/counter', label: 'Counter' },
   { to: '/tasks/even-odd', label: 'Even Odd' },
   { to: 'tasks/move-box', label: 'Move Box' },
+  { to: 'tasks/cursor', label: 'Cursor Follower' },
 ];
 
 export default function RootLayout() {

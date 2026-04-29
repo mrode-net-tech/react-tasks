@@ -7,3 +7,5 @@ export type NumberType = 'even' | 'odd' | 'mod-3' | 'mod-5' | 'mod-15';
 export const INITIAL_BOX_POSITION: BoxPosition = 'left';
 
 export type BoxPosition = 'left' | 'right';
+
+export const CURSOR_DELAY_MS: number = 500;
