@@ -15,6 +15,7 @@ const TASK_LINKS: readonly TaskLink[] = [
   { to: '/tasks/cursor', label: 'Cursor Follower' },
   { to: '/tasks/typewriter', label: 'Typewriter' },
   { to: '/tasks/todo', label: 'To-Do' },
+  { to: '/tasks/carousel', label: 'Carousel' },
 ];
 
 export default function RootLayout() {

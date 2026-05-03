@@ -7,6 +7,7 @@ import MoveBoxPage from '@/pages/Tasks/MoveBoxPage.tsx';
 import CursorFollowerPage from '@/pages/Tasks/CursorFollowerPage.tsx';
 import TypewriterPage from '@/pages/Tasks/TypewriterPage.tsx';
 import ToDoPage from '@/pages/Tasks/ToDoPage.tsx';
+import CarouselPage from '@/pages/Tasks/CarouselPage.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: 'tasks/cursor', Component: CursorFollowerPage },
       { path: 'tasks/typewriter', Component: TypewriterPage },
       { path: 'tasks/todo', Component: ToDoPage },
+      { path: 'tasks/carousel', Component: CarouselPage },
     ],
   },
 ]);

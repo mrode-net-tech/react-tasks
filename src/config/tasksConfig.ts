@@ -20,3 +20,23 @@ export const TYPEWRITER_SOUNDS: Record<
   enter: { freq: 300, duration: 0.15 },
   backspace: { freq: 200, duration: 0.08 },
 };
+
+export interface CarouselImage {
+  src: string;
+  alt: string;
+}
+
+export const CAROUSEL_IMAGES: readonly CarouselImage[] = [
+  {
+    src: 'https://picsum.photos/seed/carousel-1/800/450',
+    alt: 'Slide 1 — random photograph',
+  },
+  {
+    src: 'https://picsum.photos/seed/carousel-2/800/450',
+    alt: 'Slide 2 — random photograph',
+  },
+  {
+    src: 'https://picsum.photos/seed/carousel-3/800/450',
+    alt: 'Slide 3 — random photograph',
+  },
+];
