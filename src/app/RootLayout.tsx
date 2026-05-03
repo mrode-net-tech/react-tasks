@@ -11,9 +11,10 @@ interface TaskLink {
 const TASK_LINKS: readonly TaskLink[] = [
   { to: '/tasks/counter', label: 'Counter' },
   { to: '/tasks/even-odd', label: 'Even Odd' },
-  { to: 'tasks/move-box', label: 'Move Box' },
-  { to: 'tasks/cursor', label: 'Cursor Follower' },
-  { to: 'tasks/typewriter', label: 'Typewriter' },
+  { to: '/tasks/move-box', label: 'Move Box' },
+  { to: '/tasks/cursor', label: 'Cursor Follower' },
+  { to: '/tasks/typewriter', label: 'Typewriter' },
+  { to: '/tasks/todo', label: 'To-Do' },
 ];
 
 export default function RootLayout() {
