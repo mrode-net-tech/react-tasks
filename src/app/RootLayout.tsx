@@ -28,22 +28,22 @@ export default function RootLayout() {
         Skip to main content
       </a>
       <header className="border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
           <Link
             to="/"
             className="rounded-sm text-lg font-semibold tracking-tight hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
           >
             React Tasks
           </Link>
-          <nav aria-label="Tasks">
-            <ul className="flex items-center gap-1 sm:gap-2">
+          <nav aria-label="Tasks" className="w-full sm:w-auto">
+            <ul className="flex flex-wrap items-center gap-1 sm:gap-2">
               {TASK_LINKS.map((link) => (
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
                       [
-                        'rounded-md px-3 py-1.5 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950',
+                        'rounded-md px-2.5 py-1.5 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:px-3 dark:focus-visible:ring-offset-slate-950',
                         isActive
                           ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
                           : 'text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
